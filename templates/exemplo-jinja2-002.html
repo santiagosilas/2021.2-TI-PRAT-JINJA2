@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css/site.css" rel="stylesheet">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    {% if status_op == 1 %}
+    <div class="alert alert-success">Cadastro realizado com sucesso!</div>
+    {% elif status_op == 2 %}
+    <div class="alert alert-warning">Cadastro Incompleto!</div>
+    {% else %}
+    <div class="alert alert-danger">Erro na Operação!</div>
+    {% endif %}
+
+    <img src="/static/assets/computer.jpeg">
+
+    <!-- javascript files -->
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/bootstrap.site.js"></script>
+  </body>
+</html>
